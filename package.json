@@ -1,0 +1,25 @@
+{
+  "name": "pokedex",
+  "version": "1.0.0",
+  "description": "Pokedex",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pedrohar2021/POKEDEX.git"
+  },
+  "author": "Pedro Rezende",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pedrohar2021/POKEDEX/issues"
+  },
+  "homepage": "https://github.com/pedrohar2021/POKEDEX#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "nodemon": "^2.0.16"
+  }
+}
