@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Pokédex</title>
+</head>
+<body>
+    
+
+    <nav>
+
+        <ul>
+            <li> <a href="#home">HOME</a></li>
+            <li> <a href="#cadastro"> CADASTRO</a></li>
+            <li> <a href="#cards"> POKEMON</a></li>
+        </ul>
+        
+    
+        </nav> 
+
+
+    <main>
+        <section id="cadastro">
+
+            <img src="/img/pokedex.png" alt="Pokedex">
+
+            <div>
+
+            <% if (pokemon == undefined) { %>
+
+            <h2>Cadastre um novo Pokemon</h2>
+
+            <form action="/create" method="POST">
+
+                <label for="nome">Nome: </label>
+                <input type="text" id="nome" name="nome">
+
+                <label for="descricao">Descrição: </label>
+                <input type="text" id="descricao" name="descricao">
+
+                <label for="tipo">Tipo: </label>
+                <input type="text" id="tipo" name="tipo">
+
+                <label for="imagem"> Link da imagem: </label>
+                <input type="text" id="imagem" name="imagem">
+
+                <button id="btnCadastrar" type="submit">Cadastrar</button>
+
+
+
+
+            </form>
+            <% } else { %>
+
+            <h2>Atualização do Pokemon</h2>
+
+            <form action="/update/<%= pokemon.id %>" method="POST">
+
+                <label for="nome">Nome: </label>
+                <input type="text" id="nome" name="nome" value="<%= pokemon.nome %>">
+
+                <label for="descricao">Descrição: </label>
+                <input type="text" id="descricao" name="descricao" value="<%= pokemon.descricao %>">
+
+                <label for="tipo">Tipo: </label>
+                <input type="text" id="tipo" name="tipo" value="<%= pokemon.tipo %>">
+
+                <label for="imagem"> Link da imagem: </label>
+                <input type="text" id="imagem" name="imagem" value="<%= pokemon.value %>">
+
+                <button id="btnAtualizar" type="submit">Atualizar</button>
+
+
+
+
+            </form>
+            <% } %>
+        </div>
+        </section>
+    </main>
+</body>
+</html>
