@@ -45,7 +45,7 @@ nav ul li{
 nav ul li a{
     text-decoration: none;
     color: #fff;
-    font-size: .9rem;
+    font-size: 1.1rem;
 }
 
 header{
@@ -57,40 +57,44 @@ header img{
     margin-top: 6.3rem;
 }
 
+
+
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 img#pokedex{
     width: 21rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 50px auto 0 auto; 
+    margin: 80px auto 0 auto; 
 
 }
 
-#pokedexx{
-   
+h1{
+    text-align: center;
+    font-size: 2rem;
+    color: white;
 }
 
-main {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+img#pokedexx {
+    margin: 0 50px 0 0;
 }
+
 
 a{
     text-decoration: none;
 }
 
-section div {
-align-items: center;
-display: flex;
-flex-direction: column;
-justify-content: center;
-width: 100%;
+
+section#cadastro{
+    width: 30%;
 }
 
-section#cadastro img{
-    width: 100%;
-}
 
 section#cadastro h2{
     width: 100%;
@@ -100,7 +104,8 @@ section#cadastro h2{
 }
 
 section#cadastro form {
-    width: 60%;
+    width: 100%;
+    margin-top: 40px;
 
 }
 
@@ -110,32 +115,36 @@ section#cadastro form input{
     font-size: 1rem;
     outline: none;
     border: solid 2px rgb(197,197,197);
-    margin: 0 1rem 1rem 1rem;
+    margin-bottom: 1.5rem;
+    margin-top: 0.3rem;
+    border:solid 3px rgb(17,140,165);
 }
 
 section#cadastro form label {
-    margin:1rem;
-    color: rgb(148,148,148);
+    color: white;
+    font-size: 1.5rem;
+
 
 }
 
 section#cadastro form button {
-    padding: 10px 50px;
-    width: 20%;
+    height: 65px;
+    width: 65px;
     display: flex;
     margin: 0 auto;
     justify-content: center;
-    font-size: 1rem;
+    font-size: 3rem;
     background-color: #fff;
-    border: solid 1px #dc0a2d;
-    color: #dc0a2d;
+    border: solid 3px rgb(17,140,165);
+    border-radius: 50%;
+    color: rgb(17,140,165)d;
     cursor: pointer;
     transition: all .3s ease-in-out;
 
 }
 
 section#cadastro form button:hover {
-    background-color: #dc0a2d;
+    background-color: rgb(17,140,165);
     color: #fff;
 
 }

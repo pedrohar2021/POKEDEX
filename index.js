@@ -11,24 +11,28 @@ const pokedex = [
     {
         id: 1,
         nome: "Bulbasaur",
+        descricao: "There is a plant seed on its back right from the day this Pokémon is born. The seed slowly grows larger.",
         tipo: "Grass",
         imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png"
     },
     {
         id: 2,
         nome: "Charmander",
+        descricao: "It has a preference for hot things. When rains, steam is said to spout from the tip of its tail.",
         tipo: "Fire",
         imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png"
     },
     {
         id: 3,
         nome: "Squirtle",
+        descricao: "When it retracts its long neck retracts its into its shell, it squirts out water with vigorous force.",
         tipo: "Water",
         imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png"
     },
     {
         id: 4,
         nome: "Pikachu",
+        descricao: "Pikachu that can generate powerful electricity have cheek sacs that are extra soft and super stretchy.",
         tipo: "Eletric",
         imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png"
     }
@@ -66,6 +70,7 @@ app.post("/create", (req, res) => {
     mensagem = "POKEMON CADASTRADO!"
     res.redirect("/index#cards")
 });
+
 
 // app.get("/detalhes/:id" , (req,res) =>{
 //     const id = +req.params.id;

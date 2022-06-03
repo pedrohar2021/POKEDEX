@@ -15,43 +15,43 @@
 
     <ul>
         <li> <a href="/">HOME</a></li>
-        <li> <a href="/cadastro"> CADASTRO</a></li>
         <li> <a href="/index"> POKEMON</a></li>
+        <li> <a href="/cadastro"> CADASTRO</a></li>
     </ul>
     
 
     </nav>
 
-    <% if(mensagem != ""){ %>
-        <section id="mensagem">
-            <p> <%=mensagem %> </p> <span id="close">&times;</span>
-        </section>
-        <% } %>
-
+    
     <section id="escrita">
         <img id="pokedex" src="https://pokedex.sleduardo.dev/img/logo.svg" alt="">
-      </section>
-
-
+    </section>
+    
+    
     
 </header>
-    
-    <main>
 
-        <section id="cards">
-            
+<main>
+
+    <section id="cards">
+        
             
             <% pokedex.forEach((pokemon) => { %>
                 <div class="card">
                     <img src="<%= pokemon.imagem %>" alt="">
                     <h3><%= pokemon.nome %></h3>
-                    
-                    <p>Tipo: <%= pokemon.tipo %></p>
+                    <p id="desc"><%= pokemon.descricao %></p>
+                    <p id="tipo"><%= pokemon.tipo %></p>
                     <a id="apagar" href="/delete/<%= pokemon.id %>">APAGAR</a>
                 </div>
                 <% }) %>
             </section>
             
+            <% if(mensagem != ""){ %>
+                <section id="mensagem">
+                    <span id="close">&times;</span><p> <%=mensagem %> </p> <span id="close2">&times;</span>
+                </section>
+                <% } %>
             
             <div>
             <a href="/cadastro">
