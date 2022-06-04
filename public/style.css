@@ -102,7 +102,7 @@ transition: all 0.5s ease-in-out;
 }
 
 section#cards div.card:hover{
-    background-color: rgba(17, 140, 165, 0.802);
+    background-color: rgba(17, 140, 165, 0.599);
     border: solid 4px white;
     transform: scale(1.1);
 }
@@ -123,7 +123,7 @@ section#cards div.card a#apagar {
     text-decoration: none;
     margin-top: 1rem;
     border-radius: 6px;
-    border: solid 2px rgba(255, 255, 255, 0.745);
+    border: solid 2px rgba(255, 255, 255, 0.637);
 
 }
 section#cards div.card a#apagar:hover{
