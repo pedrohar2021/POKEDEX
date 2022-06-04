@@ -176,7 +176,23 @@ footer p a{
 @media (max-width: 600px) {
 
 main{
+    display: flex;
     flex-direction: column;
+}
+
+img#pokedexx {
+    margin: 25px auto 0 auto;
+    width: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section#cadastro{
+    margin: 25px auto 0 auto;
+    width: 15rem;
+    justify-content: center;
+    align-items: center;
 }
 }
 

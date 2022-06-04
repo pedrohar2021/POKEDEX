@@ -72,6 +72,7 @@ app.post("/create", (req, res) => {
 });
 
 
+
 // app.get("/detalhes/:id" , (req,res) =>{
 //     const id = +req.params.id;
 //     pokemon = pokedex.find(pokemon => pokemon.id === id);
@@ -86,6 +87,15 @@ app.post("/create", (req, res) => {
 //     pokemon = undefined
 //     res.redirect("/index#cards");
 // });
+
+// let mensagem2 = ''
+// app.post("/apagar", (req,res) => {
+//     mensagem2 = 'POKEMON EXCLUIDO'
+//     delete pokedex[id]
+//     res.redirect("/index#cards");
+
+// })
+
 
 app.get("/delete/:id", (req,res) => {
     const id = +req.params.id -1
