@@ -54,6 +54,7 @@ app.get("/cadastro", (req,res) => {
     res.render('cadastro')
 })
 
+let mensagem = "";
 
 
 app.get("/index", (req, res) => {
@@ -61,7 +62,6 @@ app.get("/index", (req, res) => {
 
 });
 
-let mensagem = "";
 
 app.post("/create", (req, res) => {
     const pokemon = req.body;
