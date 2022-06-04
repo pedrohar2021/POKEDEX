@@ -134,7 +134,7 @@ section#cards div.card a#apagar:hover{
 
 section#cards div.card img{
     transition: all 0.5s ease-in-out;
-    width: 70%;
+    width: 100%;
 }
 
 section#cards div.card img:hover{
@@ -231,3 +231,4 @@ footer p a{
 span#close2:hover {
   transform: scale(1.5);
 }
+
