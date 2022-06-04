@@ -99,7 +99,7 @@ app.post("/create", (req, res) => {
 
 app.get("/delete/:id", (req,res) => {
     const id = +req.params.id -1
-
+    mensagem = "POKEMON DELETADO!"
     delete pokedex[id]
     res.redirect("/index#cards");
 
