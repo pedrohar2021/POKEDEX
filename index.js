@@ -44,6 +44,7 @@ const pokedex = [
 
 
 let pokemon = undefined;
+let mensagem = "";
 
 app.get("/", (req, res) => {
     res.render('home');
@@ -54,11 +55,11 @@ app.get("/cadastro", (req,res) => {
     res.render('cadastro')
 })
 
-let mensagem = "";
 
 
 app.get("/index", (req, res) => {
     res.render('index', {pokedex, pokemon, mensagem});
+    mensagem = ''
 
 });
 
